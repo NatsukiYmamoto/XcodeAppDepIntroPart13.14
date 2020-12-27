@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="XcodeAppDepIntroPart13_14" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.5" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="7Uc-Pc-cAc">
+                                <rect key="frame" x="132" y="194" width="144" height="31"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="cangeSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="26u-Zf-nro"/>
+                                    <action selector="changeSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="nZW-F6-I8N"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vW7-MQ-ZYp">
+                                <rect key="frame" x="186" y="284" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1hG-tt-G5W">
+                                <rect key="frame" x="184" y="455" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="pressButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9hd-Bw-fi9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1hG-tt-G5W" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OYK-Xh-jS0"/>
+                            <constraint firstItem="vW7-MQ-ZYp" firstAttribute="top" secondItem="7Uc-Pc-cAc" secondAttribute="bottom" constant="60" id="Vl7-kX-LCe"/>
+                            <constraint firstItem="7Uc-Pc-cAc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Xfb-23-erf"/>
+                            <constraint firstItem="vW7-MQ-ZYp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="egd-ff-WPO"/>
+                            <constraint firstItem="1hG-tt-G5W" firstAttribute="top" secondItem="vW7-MQ-ZYp" secondAttribute="bottom" constant="150" id="qTx-o6-Jdi"/>
+                            <constraint firstItem="7Uc-Pc-cAc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="rJu-gx-RWX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="1hG-tt-G5W" id="IXe-Az-Na4"/>
+                        <outlet property="label" destination="vW7-MQ-ZYp" id="1Qc-ag-sFa"/>
+                        <outlet property="slider" destination="7Uc-Pc-cAc" id="00k-ta-bTo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="93.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
